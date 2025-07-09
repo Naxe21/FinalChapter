@@ -23,8 +23,8 @@ html, body {
 }
 .tekskecil{
   color: white;
-  font-family: monstrat;
 }
+
 #overlay.fade-out {
   opacity: 0;
   transition: opacity 0.5s ease;
