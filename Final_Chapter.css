@@ -18,7 +18,7 @@ html, body {
 
 #teks{
     color:white;
-    margin-left:5%;
+    margin-left:200px;
 }
 #overlay.fade-out {
   opacity: 0;
