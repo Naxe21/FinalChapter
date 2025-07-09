@@ -21,6 +21,9 @@ html, body {
     margin-left: 4vw;
     font-family: system-ui;
 }
+.tekskecil{
+  color: white;
+  font-family: monstrat;
 #overlay.fade-out {
   opacity: 0;
   transition: opacity 0.5s ease;
