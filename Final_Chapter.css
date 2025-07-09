@@ -17,7 +17,7 @@ html, body {
 }
 
 #top{
-    z-index: 20;
+    color:white;
 }
 #overlay.fade-out {
   opacity: 0;
