@@ -19,6 +19,7 @@ html, body {
 #teks{
     color:white;
     margin-left: 4vw;
+    font-family: "Gill Sans", sans-serif;
 }
 #overlay.fade-out {
   opacity: 0;
