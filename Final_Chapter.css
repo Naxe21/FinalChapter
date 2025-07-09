@@ -15,9 +15,6 @@ html, body {
   height: 100%;
   overflow: hidden;
 }
-
-#top{
-  gap: 20px;
 #teks{
     color:white;
     margin-left: 4vw;
