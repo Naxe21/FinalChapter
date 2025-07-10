@@ -1,0 +1,290 @@
+body {
+  background-image: url('body1.jpg');
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: top center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  overflow: hid
+}
+
+#top{
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    gap: 35vw;
+}
+#overlay.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+#overlay{
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.popup-card {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-image: url(back.jpg);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 90%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.5s ease;
+  box-sizing: border-box;
+}
+
+.popup-content img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+
+.popup-content button {
+  padding: 10px 20px;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+#content{
+  margin-top: -50vh;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+.fadeout {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+#halo{
+  font-size: 10vw;
+  color: aliceblue;
+  margin-left: 5vw;
+  margin-top: 2vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.teks{
+  color: aliceblue;
+  margin-left: 5vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#play{
+  width: 25vw;
+  height: fit-content
+}
+#play{
+  cursor: pointer;
+  opacity: 1;
+  transition: transform 0.2s ease-in-out;
+}
+#play:hover{
+  opacity: 0.7;
+  transform: scale(1.025);
+
+}
+#music{
+  margin-top: -1vh;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: fit-content;
+}
+#instruction{
+  color:azure;
+  margin-left: 8.1vw;
+  font-size: 2vw;
+  margin-top: -10vh;
+}
+.teksKecil{
+  color: azure;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin-left: 5.4vw;
+  font-size: medium;
+  margin-top: 55vh;
+  opacity: 0.8;
+  -webkit-text-stroke: black 0.2px;
+}
+.b, .r{
+  display: inline;
+}
+.highlight{
+  background-color: red;
+  text-decoration: underline;
+}
+.fade{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+.fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.foto{
+  width: 22vw;
+  border-radius: 30px;
+  border: black solid 0.5vw;
+  opacity: 1;
+  margin-left: 5vw;
+  margin-top: 5vh;
+}
+.photos{
+  display: flex;
+  flex-direction: column;
+  color: azure;
+}
+.caption{
+  margin-left: 10vw;
+}
+#fotolist{
+  display: flex;
+  flex-direction: row;
+}
+.teksBesar{
+  color: aliceblue;
+  font-size: 6vw;
+}
+#after{
+  margin-top: 5vh;
+  background-color: black;
+  height: 100vh;
+  align-content: center;
+  justify-items: center;
+}
+#after2{
+  background-image: url('nick-nice-DqN0niGVZ1w-unsplash.jpg');
+  height: 100vh;
+  padding-top: 4vh;
+}
+.fadee{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fadee.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+.teksBesarr{
+  font-size: 8vw;
+  color: aliceblue;
+  margin-left: 5vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.teksKecill{
+  color: azure;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  margin-left: 5.4vw;
+  font-size: medium;
+  margin-top: 2vh;
+  line-height: 1.5;
+  opacity: 0.8;
+}
+.foto1{
+  width: 80vw;
+  border-radius: 30px;
+  border: black solid 0.5vw;
+  opacity: 1;
+  margin-left: 5vw;
+  margin-top: 5vh;
+}
+.caption1{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: azure;
+  margin-left: 5vw;
+  font-size: 4vw;
+}
+#foto2{
+  margin-top: vh;
+}
+
+@media screen and (max-width: 600px) {
+  .teksKecil{
+    margin-top: 18vh;
+    margin-left: 2vh;
+    opacity: 0.8;
+    -webkit-text-stroke: black 0.2px;
+} 
+.r{
+  display: block;
+}
+body{
+  background-image: url('body.jpg');
+}
+#instruction{
+  margin-top: -2vh;
+  margin-left: 7.5vw;
+}
+.foto{
+  width: 50vw;
+  height: fit-content;
+  margin-top: 3vh;
+  margin-left: 4vw;
+}
+.fade{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+.fade.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+#content{
+  margin-top: -15vh;
+}
+#fotolist{
+  display: flex;
+  flex-direction: column;
+}
+.photos{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.caption{
+  margin-left: 2.5vw;
+}
+#after{
+  margin-top: 5vh;
+  background-color: black;
+  height: 30vh;
+  align-content: center;
+  justify-items: center;
+}
+}
